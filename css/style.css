@@ -2,4 +2,48 @@ body {
 	background-color: #FA7313; /* Our other colors are 850313, FA7313, 90011A, C90635, C23407*/
 	font-size: 16px;
 	color: white;
+	font-family: 'Oxygen', sans-serif;
+}
+
+p {
+	/* font-family: 'Aguafina Script', cursive;       the title font-family */
+}
+
+#header-nav {
+	background-color: #850313;
+	border: 0;
+	border-radius: 0;
+}
+
+#logo-img {
+	background: url("http://www.behesht.co.uk/images/behesht/logo.png") no-repeat;
+	width: 300px;
+	height:140px;
+	margin: 28px 15px 5px 0px;
+}
+#certification {
+	height: 25px;
+	width: 25px;
+}
+
+.navbar-brand {
+	padding-top: 15px;
+}
+
+.navbar-brand h1 {
+	font-family: 'Aguafina Script', cursive;
+	font-size: 60px;
+	color: #057B99;
+	font-weight: bold;
+	/* margin-top: 0px;
+	margin-bottom: 0px; */
+	line-height: 1.1;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none; 
+}
+
+.navbar-brand p span {
+	vertical-align: middle;
 }
