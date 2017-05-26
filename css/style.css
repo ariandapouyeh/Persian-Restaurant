@@ -1,3 +1,7 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
 body {
 	background-color: #FA7313; /* Our other colors are 850313, FA7313, 90011A, C90635, C23407*/
 	font-size: 16px;
@@ -14,7 +18,9 @@ p {
 	border: 0;
 	border-radius: 0;
 }
-
+#nav-back {
+	height: 140px;
+}
 #logo-img {
 	background: url("http://www.behesht.co.uk/images/behesht/logo.png") no-repeat;
 	width: 300px;
@@ -47,3 +53,115 @@ p {
 .navbar-brand p span {
 	vertical-align: middle;
 }
+
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #8A2BE2;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+#phone {
+  margin-top: 5px;
+}
+#phone a { /* Phone number */
+  text-align: right;
+  padding-bottom: 0;
+}
+#phone div { /* We Deliver */
+  color: #557c3e;
+  text-align: right;
+  padding-right: 15px;
+}
+
+ .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #220B38;
+} 
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+#collapsable-nav {
+	float: right;
+}
+
+
+@media (min-width: 1365px) {
+	#nav-list {
+		float: left;
+		margin-left: 45px;
+	}
+}
+
+@media (max-width: 1365px) and (min-width: 1200px) {
+	.navbar-brand h1 {
+		font-size: 40px;
+	}
+	nav {
+		height: 140px;
+	}
+	#logo-img {
+		margin: 7px 5px 0px 0px;
+	}
+	#collapsable-nav {
+		margin-top: 10px;
+	}
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+	.navbar-brand h1 {
+		font-size: 30px;
+	}
+	nav {
+		height: 140px;
+	}
+	#logo-img {
+		margin: -3px 5px 0px 0px;
+	}
+	#collapsable-nav {
+		margin-top: 10px;
+		font-size: 10.5px;
+	}
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+	#collapsable-nav {
+		float: left;
+		clear: right;
+		margin-top: 20px;
+	}
+	#logo-img {
+		margin: 7px 5px 0px 0px;
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar-header button.navbar-toggle {
+		margin: 10px;
+	}
+	.navbar-brand h1 {
+		font-size: 7vw;
+		margin-left: 35px;
+	}
+	/* #cert {
+		font-size: 10px;
+	} */
+}
+
+/* .navbar-brand span {
+	font-size: 15px;
+	margin-left: 3px;
+}
+
+.navbar-brand p {
+	margin-left: 15px;
+} */
