@@ -83,12 +83,23 @@ p {
 }
 
  .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #220B38;
+  border: 1px solid #220B38 !important;
 } 
 .navbar-header button.navbar-toggle {
   clear: both;
-  margin-top: -30px;
+  margin-top: -15px !important;
 }
+
+.navbar-header button.navbar-toggle:hover {
+	background-color: white !important;
+}
+button {
+	background-color: #4B77BE !important; 
+}
+
+.icon-bar {
+	background-color: black;
+} 
 
 #collapsable-nav {
 	float: right;
@@ -145,13 +156,29 @@ p {
 }
 
 @media (max-width: 767px) {
-	.navbar-header button.navbar-toggle {
+/* 	.navbar-header button.navbar-toggle {
 		margin: 10px;
-	}
+	} */
 	.navbar-brand h1 {
-		font-size: 7vw;
-		margin-left: 35px;
+		font-size: 10vw;
+		margin-left: 15px;
 	}
+	#nav-button {
+	}
+	div.navbar-header {
+		height: 100px;
+	}
+	#collapsable-nav {
+	background-color: #850313;
+	border: white solid 1px; 
+	}
+	.glyf-text {
+		font-size: 24px;
+	}
+	#collapsable-nav a span {
+		font-size: 24px;
+	} 
+
 	/* #cert {
 		font-size: 10px;
 	} */
