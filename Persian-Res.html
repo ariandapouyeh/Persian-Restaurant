@@ -17,7 +17,7 @@
 
 <header>
 	<nav id="header-nav" class="navbar navbar-default">  <!-- many bootstrap elements have a default class beside their main class--> 
-		<div class="containers"> <!-- The class 'container-fluid' stretches to the full width of the browser window (minus some margins) and automatically adjusts its width as you change the width of the browser. -->
+		<div class="containers container-fluid"> <!-- The class 'container-fluid' stretches to the full width of the browser window (minus some margins) and automatically adjusts its width as you change the width of the browser. -->
 			<div class="navbar-header">
 				<a id="nav-back" href="#" class="pull-left visible-md visible-lg visible-sm">  <!-- the a is only visible in lg, md and sm screens -->
 
@@ -26,7 +26,7 @@
 					</div>
 				</a>
 				<div class="navbar-brand" >
-					<a href="#"><h1 class="visible-lg visible-md">London's best persian restaurant</h1> <h1 id="alt-title" class="visible-sm visible-xs">Behesht Restaurant</h1></a>
+					<a href="#"><h1 id="title-main" class="visible-lg visible-md ">London's best persian restaurant</h1> <h1 id="alt-title" class="visible-xs">Behesht Restaurant</h1></a>
 					<p class="visible-md visible-lg">
 						<img src="http://www.bci.co.in/images/headerlogo2.png" id="certification">
 						<span id="cert">Certified by british food standards</span>
@@ -44,20 +44,21 @@
           <div id="collapsable-nav" class="collapse navbar-collapse">
         <ul id="nav-list" class="nav navbar-nav navbar-right">
         <li>
-        <a href="menu-categories.html">
+        <a class="glyf-text" href="menu-categories.html">
         <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
         </li>
         <li>
-        <a href="#">
+        <a class="glyf-text" href="#">
         <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
         </li>
         <li>
-        <a href="#">
+        <a class="glyf-text" href="#">
         <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
         </li>
         <li id="phone" class="hidden-xs">
         <a href="tel:410-602-5008">
-        <span>410-602-5008</span></a><div>* We Deliver</div>
+        <span>410-602-5008</span></a>
+        <div>We Deliver</div>
         </li>
         </ul><!-- #nav-list -->
 
@@ -68,7 +69,15 @@
 	</nav>
 </header>
 
-<p>Hello my professional website!</p>
+<div id="main-content" class="containers container-fluid">
+	<div class="jumbotron">
+		<img class="img-res img-responsive visible-lg" alt="picture of restaurant" src="images/Behesht---900-1800.jpg">
+		<img class="img-res img-responsive visible-md" src="images/behesht---960-640.jpg">
+		<img class="img-res img-responsive visible-sm" src="images/behesht---960-360.jpg">
+		<img class="img-res img-responsive visible-xs" src="images/behesht---640-384-2.jpg">
+	</div>
+
+</div>
 
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

@@ -3,7 +3,7 @@
 	padding: 0px;
 }
 body {
-	background-color: #FA7313; /* Our other colors are 850313, FA7313, 90011A, C90635, C23407*/
+	background-color: #956843; /* We prey palleton*/
 	font-size: 16px;
 	color: white;
 	font-family: 'Oxygen', sans-serif;
@@ -14,9 +14,10 @@ p {
 }
 
 #header-nav {
-	background-color: #850313;
+	background-color: #580F0F;
 	border: 0;
 	border-radius: 0;
+	box-shadow: 0 0 50px #2C0000;
 }
 #nav-back {
 	height: 140px;
@@ -56,7 +57,7 @@ p {
 
 
 #nav-list {
-  margin-top: 10px;
+  margin-top: 22px;
 }
 #nav-list a {
   color: #8A2BE2;
@@ -106,10 +107,26 @@ button {
 }
 
 
+
+
+
+
+
+
+#main-content .jumbotron {
+	background-color: #460C2D; 
+	box-shadow: 0 0 50px #2A0018;
+	border: 2px solid #460C2D;
+}
+/*********  Media tags **********/
+
 @media (min-width: 1365px) {
 	#nav-list {
 		float: left;
 		margin-left: 45px;
+	}
+	#logo-img {
+		margin-top: 10px;
 	}
 }
 
@@ -142,17 +159,36 @@ button {
 		margin-top: 10px;
 		font-size: 10.5px;
 	}
+
+
+	.container .jumbotron {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 558px;
+  }
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
 	#collapsable-nav {
 		float: left;
 		clear: right;
-		margin-top: 20px;
+		margin-top: 70px;
 	}
 	#logo-img {
 		margin: 7px 5px 0px 0px;
 	}
+	#alt-title {
+		margin-top: 45px;
+	}
+	#nav-list {
+		margin-top: -25px;
+	}
+
+
+
+	.container .jumbotron {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 432px; 
+  }
 }
 
 @media (max-width: 767px) {
@@ -179,16 +215,12 @@ button {
 		font-size: 24px;
 	} 
 
-	/* #cert {
-		font-size: 10px;
-	} */
+
+	.container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+    }
+
+
 }
 
-/* .navbar-brand span {
-	font-size: 15px;
-	margin-left: 3px;
-}
-
-.navbar-brand p {
-	margin-left: 15px;
-} */
