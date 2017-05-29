@@ -118,6 +118,41 @@ button {
 	box-shadow: 0 0 50px #2A0018;
 	border: 2px solid #460C2D;
 }
+
+#Menu-tile, #Specials-tile , #map-tile {
+	height: 250px;
+	width: 100%;
+	margin-bottom: 35px;
+	margin-top: 40px;
+	position: relative;
+	border: 2px solid #3F0C1F;
+	overflow: hidden;
+}
+#Menu-tile:hover, #Specials-tile:hover, #map-tile:hover {
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+#Menu-tile {
+	background: url("/images/behesht-menu.jpg") no-repeat;
+	background-position: center;
+}
+#Specials-tile {
+	background: url("/images/behesht-specials.jpg") no-repeat;
+	background-position: bottom center;
+	background-size: 477px 318px;
+}
+#Menu-tile span, #Specials-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
 /*********  Media tags **********/
 
 @media (min-width: 1365px) {
@@ -220,7 +255,9 @@ button {
     margin-top: 30px;
     padding: 0;
     }
-
-
+    #Menu-tile, #Specials-tile, #map-tile {
+    	width: 260px;
+    	margin: 0 auto 15px;
+    }
 }
 
