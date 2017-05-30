@@ -153,6 +153,41 @@ button {
   opacity: .8;
 }
 
+
+
+
+
+.panel-footer {
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	border-top: 0;
+	background-color: #222;
+}
+#kopi {
+	margin-top: 50px;
+}
+footer > div .row {
+	margin-top: 30px;
+}
+#hours, #adress {
+	line-height: 2;
+}
+#hours > span, #adress > span {
+	font-size: 1.3em;
+}
+#adress p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#comments {
+	font-style: italic;
+}
+#comments p:nth-child(3) {
+	margin-top: 25px;
+}
+
 /*********  Media tags **********/
 
 @media (min-width: 1365px) {
@@ -258,6 +293,17 @@ button {
     #Menu-tile, #Specials-tile, #map-tile {
     	width: 260px;
     	margin: 0 auto 15px;
+    }
+    .panel-footer section {
+    	margin-bottom: 30px;
+    	text-align: center;
+    }
+    .panel-footer {
+    	margin-bottom: 0, 
+    }
+    .panel-footer section hr {
+    	width: 50%;
+    	align-items: center;
     }
 }
 
