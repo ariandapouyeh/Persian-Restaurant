@@ -224,6 +224,53 @@ footer > div .row {
 #menu-categories-title + div, #menu-categories-title {
 	color: #0E1B3A;
 }
+
+
+
+.menu-item-tile {
+  margin-bottom: 30px;
+}
+.menu-item-tile hr {
+  width: 80%;
+}
+.menu-item-tile .menu-item-price span {
+  font-size: .6em;
+}
+div.row.chosen {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.menu-item-photo {
+  position: relative;
+  border: 2px solid #3F0C1F; 
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: 0px;
+  margin-bottom: 20px;
+  max-width: 230px;
+}
+.menu-item-photo div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #557c3e;
+  text-align: center;
+}
+.menu-item-description {
+  padding-right: 30px;
+}
+h3.menu-item-title {
+  margin: 0 0 10px;
+}
+.menu-item-details {
+  font-size: .9em;
+  font-style: italic;
+}
+
+
+
 /*********  Media tags **********/
 
 @media (min-width: 1365px) {
