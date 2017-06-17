@@ -42,25 +42,29 @@
           </button>
 
           <div id="collapsable-nav" class="collapse navbar-collapse">
-        <ul id="nav-list" class="nav navbar-nav navbar-right">
-        <li>
-        <a class="glyf-text" href="Persian-Res-Menu.html">
-        <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
-        </li>
-        <li>
-        <a class="glyf-text" href="#">
-        <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
-        </li>
-        <li>
-        <a class="glyf-text" href="#">
-        <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
-        </li>
-        <li id="phone" class="hidden-xs">
-        <a href="tel:410-602-5008">
-        <span>410-602-5008</span></a>
-        <div>We Deliver</div>
-        </li>
-        </ul><!-- #nav-list -->
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li id="navHomeButton" class="visible-xs active">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span> Home</a>
+            </li>
+            <li>
+              <a id="navMenuButton" class="glyf-text navMenuButton" href="#">
+              <span class="glyphicon glyphicon-cutlery" onclick="$dc.loadMenuCategories();"></span><br class="hidden-xs"> Menu</a>
+            </li>
+            <li>
+              <a class="glyf-text" href="#">
+              <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+            </li>
+            <li>
+              <a class="glyf-text" href="#">
+              <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
+            </li>
+            <li id="phone" class="hidden-xs">
+              <a href="tel:410-602-5008">
+              <span>410-602-5008</span></a>
+            <div>We Deliver</div>
+            </li>
+            </ul><!-- #nav-list -->
 
         </div><!-- .collapse .navbar-collapse -->
         </div>
@@ -69,36 +73,7 @@
 	</nav>
 </header>
 
-<div id="main-content" class="containers container-fluid">
-	<div class="jumbotron">
-		<img class="img-res img-responsive visible-lg" alt="picture of restaurant" src="images/Behesht---900-1800.jpg">
-		<img class="img-res img-responsive visible-md" src="images/behesht---960-640.jpg">
-		<img class="img-res img-responsive visible-sm" src="images/behesht---960-360.jpg">
-		<img class="img-res img-responsive visible-xs" src="images/behesht---640-384-2.jpg">
-	</div>
-
-
-
-	<div id="hometiles" class="row">
-		<div class="col-md-4 col-sm-6 col-xs-12">
-			<a href="Persian-Res-Menu.html">
-				<div id="Menu-tile" ><span>Menu</span></div>
-			</a>
-		</div>
-		<div class="col-md-4 col-sm-6 col-xs-12">
-			<a href="Pers-Res-Specials.html">
-				<div id="Specials-tile" ><span>Specials</span></div>
-			</a>
-		</div>
-		<div class="col-md-4 col-sm-6 col-xs-12">
-			<a href="https://www.google.dk/maps/place/Behesht+Restaurant/@51.5319694,-0.232517,21z/data=!4m5!3m4!1s0x48761034f573cdd1:0x4f7440ad80d10a75!8m2!3d51.531967!4d-0.232451" target="_blank">
-				<div id="map-tile" >
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155.12360428767656!2d-0.23251697934223112!3d51.53196942435284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761034f573cdd1%3A0x4f7440ad80d10a75!2sBehesht+Restaurant!5e0!3m2!1sen!2sdk!4v1496061507477" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-				<span>Map</span></div>
-			</a>
-		</div>
-	</div>
-</div>
+<div id="main-content" class="containers container-fluid"></div>
 
 
 <footer class="panel-footer">
@@ -136,6 +111,7 @@
 <!-- <script src="js/jquery-1.11.3.min.js"></script> -->   
 <script src="js/jquery-2.1.4.min.js"></script>  
 <script src="js/bootstrap.min.js"></script>
+<script src="js/ajax-utils.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

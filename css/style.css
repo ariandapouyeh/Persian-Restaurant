@@ -208,19 +208,30 @@ footer > div .row {
 	opacity: 0.8;
 	font-size: 1.2em;
 	background-color: #0E1B3A;
-	color: #B96565;
+	color: /* #B96565 */ white;
 	text-transform: uppercase;
 	padding: 5px;
+	font-size: 0.85em;
 }
 .category-tile:hover {
 	box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-categories-title-indeholder {
+	border: 2px solid rgb(14, 27, 58);
+	height: 110px;
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+	/* background-color: #9C8C42; */
+	background-color: rgb(14, 27, 58); 
 }
 #menu-categories-title + div {
 	margin-bottom: 50px;
 	font-size: 0.8em;
 }
 #menu-categories-title + div, #menu-categories-title {
-	color: #0E1B3A;
+	/* color: #0E1B3A; */ color: white;
 }
 
 
